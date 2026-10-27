@@ -1,0 +1,7 @@
+name: ci
+on: push
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    steps:
+      - run: node src/build.js

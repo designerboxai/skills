@@ -1,0 +1,21 @@
+{
+  "name": "designerbox-studio",
+  "displayName": "DesignerBox Studio",
+  "version": "0.1.0",
+  "description": "Product photos, listing sets and ad creatives with DesignerBox, with one cost confirmation before anything is charged.",
+  "author": {
+    "name": "DesignerBox",
+    "email": "contact@designerbox.ai",
+    "url": "https://designerbox.ai"
+  },
+  "homepage": "https://designerbox.ai/docs/integrations/mcp",
+  "repository": "https://github.com/designerboxai/skills",
+  "license": "MIT",
+  "icon": "./assets/logo.png",
+  "documentationUrl": "https://designerbox.ai/docs/integrations/mcp",
+  "supportUrl": "https://designerbox.ai/contact",
+  "privacyPolicyUrl": "https://designerbox.ai/privacy",
+  "termsOfServiceUrl": "https://designerbox.ai/terms",
+  "keywords": ["design", "product photos", "ecommerce", "ad creatives", "brand", "mcp"],
+  "mcpServers": "./.mcp.json"
+}

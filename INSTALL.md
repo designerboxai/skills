@@ -23,7 +23,7 @@ If you already see a DesignerBox connector, check its address. The directory con
 
 Pick one way.
 
-**Option A, the whole plugin.** Download the file `designerbox-studio-0.1.0.zip` from the [latest release](https://github.com/designerboxai/skills/releases/latest) (`https://github.com/designerboxai/skills/releases/latest`). Do not unzip it. In claude.ai open Customize, then Plugins, then Upload, and choose the file as it is.
+**Option A, the whole plugin.** Download the file `designerbox-studio-0.1.1.zip` from the [latest release](https://github.com/designerboxai/skills/releases/latest) (`https://github.com/designerboxai/skills/releases/latest`). Do not unzip it. In claude.ai open Customize, then Plugins, then Upload, and choose the file as it is.
 
 (Screenshot: Customize, Plugins, Upload)
 

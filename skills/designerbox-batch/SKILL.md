@@ -1,8 +1,8 @@
 ---
 name: designerbox-batch
-description: Use when the same treatment should run over several products: a list of products, a folder of photos, a CSV or a catalogue, with one total-cost confirmation. Also use to resume a DesignerBox batch that stopped ("continue the batch", "finish my batch"). NOT for a single product (use designerbox-product-photos) or one ad in several sizes (use designerbox-ads-social).
+description: Use when the same treatment should run over several products, such as a list of products, a folder of photos, a CSV or a catalogue, with one total-cost confirmation. Also use to resume a DesignerBox batch that stopped ("continue the batch", "finish my batch"). NOT for a single product (use designerbox-product-photos) or one ad in several sizes (use designerbox-ads-social).
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # DesignerBox: one treatment, many products

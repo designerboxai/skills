@@ -2,7 +2,7 @@
 name: designerbox-ads-social
 description: Use when someone wants ad or social creatives for a product with DesignerBox, in one or more placement sizes (feed, story, Pinterest, square, banner), optionally in their brand style. NOT for marketplace listing photos (use designerbox-product-photos) or video ads (not supported).
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # DesignerBox: ads and social creatives

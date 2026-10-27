@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1
+
+- Installs cleanly with `gh skill install` and `npx skills add`: the validator's test fixtures moved to a hidden folder, so skill installers no longer pick them up.
+- `designerbox-batch`: its description is valid YAML for strict parsers, and the validator now rejects a description that is not.
+- README: badges, install routes first (including `gh skill install`), invoke commands, outcomes and a quick reference.
+
 ## 0.1.0
 
 First release.

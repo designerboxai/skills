@@ -2,7 +2,7 @@
 name: designerbox-start-here
 description: Use when someone wants DesignerBox product photos, listing images or ad creatives and the connector or upload path is not set up yet, or it is unclear which DesignerBox skill fits. NOT for running a generation itself; this skill checks the connector, reads credits, gets photos in, and hands off to designerbox-product-photos, designerbox-batch, designerbox-ads-social or designerbox-refine.
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # DesignerBox: start here

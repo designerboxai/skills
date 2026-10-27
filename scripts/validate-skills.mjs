@@ -16,7 +16,7 @@ function walk(dir, root, out = []) {
     const full = path.join(dir, e.name);
     const rel = path.relative(root, full).split(path.sep).join('/');
     if (e.isDirectory()) {
-      if (rel === 'scripts/fixtures') continue;
+      if (rel === 'scripts/.fixtures') continue; // test fixtures, hidden so skill installers skip them
       walk(full, root, out);
     } else out.push(rel);
   }
@@ -103,6 +103,8 @@ export function validate(root) {
         if (!fm.description.includes('Use when')) err(rel, 'description must contain "Use when"');
         if (!fm.description.includes('NOT for')) err(rel, 'description must contain "NOT for"');
         if (fm.description.length > 1024) err(rel, `description is ${fm.description.length} characters (max 1024)`);
+        // An unquoted YAML value may not hold ": " or " #": strict parsers (gh skill, npx skills) reject the file.
+        if (/: | #/.test(fm.description)) err(rel, 'description must not contain ": " or " #" (strict YAML parsers reject it)');
         if (fm.version === null) err(rel, `metadata.version must be a quoted string, got ${fm.rawVersion}`);
         else if (version !== null && fm.version !== version) err(rel, `metadata.version "${fm.version}" does not equal VERSION ${version}`);
       }

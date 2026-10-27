@@ -2,7 +2,7 @@
 name: designerbox-product-photos
 description: Use when one product needs listing photos, a white-background main image, lifestyle scenes, extra angles, relighting, a flat lay or an on-model shot with DesignerBox. NOT for several products at once (use designerbox-batch) or ad sizes with brand styling (use designerbox-ads-social).
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # DesignerBox: product photos for one product

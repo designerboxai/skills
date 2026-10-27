@@ -2,7 +2,7 @@
 name: designerbox-refine
 description: Use when a DesignerBox result came out wrong or needs one specific change (a wrong colour, an altered label, an odd background, a misspelt word, a different mood). NOT for a first generation or for re-running the same request unchanged.
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # DesignerBox: fix or change one thing in a result

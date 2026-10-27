@@ -23,7 +23,7 @@ If you only want the connector: `claude mcp add --transport http designerbox-stu
 
 **claude.ai**
 
-Tell the user: Settings, Connectors, Add custom connector, paste the URL, sign in. Then have them download `designerbox-studio-0.1.0.zip` from https://github.com/designerboxai/skills/releases/latest and upload it as it is, without unzipping (Customize, Plugins, Upload), or upload one skill folder as a skill. Fallback: paste a `SKILL.md` into a Project's instructions. One skill folder or one pasted `SKILL.md` is partial: it loses rules that live in other skills' reference files (retry rules, call shapes). The plugin is the supported path. Full steps: [INSTALL.md](INSTALL.md).
+Tell the user: Settings, Connectors, Add custom connector, paste the URL, sign in. Then have them download `designerbox-studio-0.1.1.zip` from https://github.com/designerboxai/skills/releases/latest and upload it as it is, without unzipping (Customize, Plugins, Upload), or upload one skill folder as a skill. Fallback: paste a `SKILL.md` into a Project's instructions. One skill folder or one pasted `SKILL.md` is partial: it loses rules that live in other skills' reference files (retry rules, call shapes). The plugin is the supported path. Full steps: [INSTALL.md](INSTALL.md).
 
 **Codex**
 

@@ -36,9 +36,17 @@ Then run `/mcp` and sign in to `designerbox-studio`.
 ### claude.ai
 
 1. Settings, Connectors, Add custom connector. Paste `https://mcp.designerbox.ai/api` and sign in.
-2. Download `designerbox-studio-0.1.0.zip` from the [latest release](https://github.com/designerboxai/skills/releases/latest) and upload it as it is, without unzipping (Customize, Plugins, Upload).
+2. Download `designerbox-studio-0.1.1.zip` from the [latest release](https://github.com/designerboxai/skills/releases/latest) and upload it as it is, without unzipping (Customize, Plugins, Upload).
 
 You can also zip one skill folder and upload it as a skill, or paste a `SKILL.md` into a Project's instructions. Both are partial: rules that live in other skills' reference files (retry rules, call shapes) are lost, so the plugin is the supported path.
+
+### gh skill (GitHub CLI 2.90+, skills only)
+
+```bash
+gh skill install designerboxai/skills --all --agent claude-code
+```
+
+Use `--agent` for your agent (`claude-code`, `codex`, `cursor` and others). This installs the skills only. Add the MCP server separately with the URL above.
 
 ### npx skills (skills only, cross-agent)
 

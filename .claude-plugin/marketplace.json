@@ -7,14 +7,14 @@
   },
   "metadata": {
     "description": "DesignerBox skills for product photos, listing sets and ad creatives, bundled with the DesignerBox MCP server.",
-    "version": "0.1.0"
+    "version": "0.1.1"
   },
   "plugins": [
     {
       "name": "designerbox-studio",
       "source": "./",
       "description": "Product photos, listing sets and ad creatives with DesignerBox, with one cost confirmation before anything is charged.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": { "name": "DesignerBox" },
       "homepage": "https://designerbox.ai/docs/integrations/mcp",
       "keywords": ["design", "product photos", "ecommerce", "ad creatives", "brand", "mcp"]

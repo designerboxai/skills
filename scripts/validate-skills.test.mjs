@@ -4,7 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validate } from './validate-skills.mjs';
 
-const fx = (n) => path.join(path.dirname(fileURLToPath(import.meta.url)), 'fixtures', n);
+const fx = (n) => path.join(path.dirname(fileURLToPath(import.meta.url)), '.fixtures', n);
 const has = (errs, text) => assert.ok(errs.some((e) => e.includes(text)), `expected "${text}" in ${JSON.stringify(errs)}`);
 
 test('valid gives no errors', () => assert.deepStrictEqual(validate(fx('valid')), []));
@@ -26,11 +26,12 @@ test('empty root reports no skills', () => has(validate(fx('valid') + '/skills/d
 test('description over 1024', () => has(validate(fx('description-too-long')), 'max 1024'));
 test('metadata.internal', () => has(validate(fx('internal-key')), 'metadata.internal is not allowed'));
 test('folded description', () => has(validate(fx('folded-description')), 'description must be a single line'));
+test('description with ": " (invalid plain YAML)', () => has(validate(fx('yaml-colon-description')), 'strict YAML parsers reject it'));
 test('skill version differs from VERSION', () => has(validate(fx('version-mismatch-skill')), 'metadata.version "0.2.0" does not equal VERSION 0.1.0'));
 test('VERSION missing', () => has(validate(fx('missing-version-file')), 'ERROR VERSION: file missing'));
 test('README missing', () => has(validate(fx('missing-readme')), 'ERROR README.md: file missing'));
 test('broken link with anchor', () => has(validate(fx('broken-anchor-link')), 'broken relative link references/missing.md#intro'));
 test('each new fixture fails only for its reason', () => {
-  for (const n of ['description-too-long', 'internal-key', 'folded-description', 'version-mismatch-skill', 'missing-version-file', 'missing-readme', 'broken-anchor-link'])
+  for (const n of ['description-too-long', 'internal-key', 'folded-description', 'yaml-colon-description', 'version-mismatch-skill', 'missing-version-file', 'missing-readme', 'broken-anchor-link'])
     assert.strictEqual(validate(fx(n)).length, 1, n);
 });
